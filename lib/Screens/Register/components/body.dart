@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:foodie/Screens/Login/components/FormComponents/RoundedButton.dart';
-import 'package:foodie/Screens/Login/components/FormComponents/passwordfieldrounded.dart';
-import 'package:foodie/Screens/Login/components/FormComponents/textfieldrounded.dart';
-import 'package:foodie/Screens/Login/components/background.dart';
+import 'package:foodie/Screens/Register/components/FormComponents/RoundedButton.dart';
+import 'package:foodie/Screens/Register/components/FormComponents/passwordfieldrounded.dart';
+import 'package:foodie/Screens/Register/components/FormComponents/textfieldrounded.dart';
+import 'package:foodie/Screens/Register/components/background.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -29,7 +29,7 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.02),
             Image.asset(
-              'assets/images/girl_chef.jpg',
+              'assets/images/man_cook.jpg',
               height: size.height * 0.4,
             ),
             SizedBox(height: size.height * 0.03),
@@ -44,7 +44,7 @@ class Body extends StatelessWidget {
               onChanged: (value) {},
             ),
             RoundedButton(
-              text: 'LOGIN',
+              text: 'REGISTER',
               textColor: Colors.white,
               bgColor: Color.fromRGBO(87, 75, 144, 1),
               pressFunction: () {},
@@ -56,14 +56,14 @@ class Body extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Dont have account ?  ',
+                  'Already have account ?  ',
                   style: TextStyle(
                     color: Color.fromRGBO(87, 75, 144, 1),
                   ),
                 ),
                 GestureDetector(
                   child: Text(
-                    'Register',
+                    'Login',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Color.fromRGBO(87, 75, 144, 1),

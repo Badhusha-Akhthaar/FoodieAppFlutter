@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:foodie/Screens/Login/components/FormComponents/textfiledcontainer.dart';
+import 'package:foodie/Screens/Register/components/FormComponents/textfieldcontainer.dart';
 
-class PasswordFieldRounded extends StatelessWidget {
+class TextFieldRounded extends StatelessWidget {
   final String hintText;
   final IconData iconData;
   final ValueChanged<String> onChanged;
-  const PasswordFieldRounded({
+  const TextFieldRounded({
     Key key,
     this.hintText,
     this.iconData,
@@ -16,7 +16,6 @@ class PasswordFieldRounded extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFieldDecoration(
         child: TextField(
-      obscureText: true,
       onChanged: onChanged,
       decoration: InputDecoration(
           hintText: hintText,

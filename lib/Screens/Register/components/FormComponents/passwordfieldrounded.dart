@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodie/Screens/Login/components/FormComponents/textfiledcontainer.dart';
+import 'package:foodie/Screens/Register/components/FormComponents/textfieldcontainer.dart';
 
 class PasswordFieldRounded extends StatelessWidget {
   final String hintText;

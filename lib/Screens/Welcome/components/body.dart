@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodie/Screens/Login/loginScreen.dart';
+import 'package:foodie/Screens/Register/registerScreen.dart';
 import 'package:foodie/Screens/Welcome/components/FormComponents/RoundedButton.dart';
 import 'package:foodie/Screens/Welcome/components/background.dart';
 
@@ -51,7 +52,16 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: 'REGISTER',
-              pressFunction: () {},
+              pressFunction: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return RegisterScreen();
+                    },
+                  ),
+                );
+              },
               bgColor: Color.fromRGBO(120, 111, 166, 1),
               textColor: Colors.white, //Color.fromRGBO(41, 41, 41, 1),
             )
